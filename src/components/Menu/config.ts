@@ -5,7 +5,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Home'),
     icon: 'HomeIcon',
-    href: '/',
+    href: 'http://localhost:5000/',
   },
   {
     label: t('Trade'),
@@ -13,20 +13,13 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: t('Exchange'),
-        href: 'https://exchange.pancakeswap.finance/#/swap',
+        href: 'http://localhost:3000/#/swap',
       },
       {
         label: t('Liquidity'),
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        href: 'http://localhost:3000/#/pool',
       },
-      {
-        label: t('LP Migration'),
-        href: 'https://v1exchange.pancakeswap.finance/#/migrate',
-      },
-      {
-        label: t('V1 Liquidity (Old)'),
-        href: 'https://v1exchange.pancakeswap.finance/#/pool',
-      },
+
     ],
   },
   {
@@ -34,103 +27,56 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'FarmIcon',
     href: '/farms',
   },
+ 
   {
-    label: t('Pools'),
-    icon: 'PoolIcon',
-    href: '/pools',
+    label: t('Referrals'),
+    icon: 'FarmIcon',
+    href: 'http://localhost:5000/#/refferals',
   },
   {
-    label: t('Prediction (BETA)'),
-    icon: 'PredictionsIcon',
-    href: '/prediction',
-  },
-  {
-    label: t('Lottery'),
-    icon: 'TicketIcon',
-    href: '/lottery',
-  },
-  {
-    label: t('Collectibles'),
-    icon: 'NftIcon',
-    href: '/collectibles',
-  },
-  {
-    label: t('Team Battle'),
-    icon: 'TeamBattleIcon',
-    href: '/competition',
-  },
-  {
-    label: t('Teams & Profile'),
+    label: t('Listings'),
     icon: 'GroupsIcon',
     items: [
       {
-        label: t('Leaderboard'),
-        href: '/teams',
+        label: t('BscScan'),
+        href: '/',
       },
       {
-        label: t('Task Center'),
-        href: '/profile/tasks',
+        label: t('DappRadar'),
+        href: '/',
       },
+
       {
-        label: t('Your Profile'),
-        href: '/profile',
-      },
-    ],
-  },
-  {
-    label: t('Info'),
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: t('Overview'),
-        href: 'https://pancakeswap.info',
-      },
-      {
-        label: t('Tokens'),
-        href: 'https://pancakeswap.info/tokens',
-      },
-      {
-        label: t('Pairs'),
-        href: 'https://pancakeswap.info/pairs',
-      },
-      {
-        label: t('Accounts'),
-        href: 'https://pancakeswap.info/accounts',
+        label: t('CoinGecko'),
+        href: '/',
       },
     ],
   },
   {
-    label: t('IFO'),
-    icon: 'IfoIcon',
-    href: '/ifo',
+    label: t('Docs'),
+    icon: 'FarmIcon',
+    href: 'http://localhost:5000/#/docs',
   },
   {
-    label: t('More'),
-    icon: 'MoreIcon',
+    label: t('Community'),
+    icon: 'GroupsIcon',
     items: [
       {
-        label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        label: t('Telelgram'),
+        href: '/',
       },
       {
-        label: t('Voting'),
-        href: 'https://voting.pancakeswap.finance',
+        label: t('Twitter'),
+        href: '/',
+      },
+
+      {
+        label: t('Reddit'),
+        href: '/',
       },
       {
-        label: t('Github'),
-        href: 'https://github.com/pancakeswap',
-      },
-      {
-        label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
-      },
-      {
-        label: t('Blog'),
-        href: 'https://pancakeswap.medium.com',
-      },
-      {
-        label: t('Merch'),
-        href: 'https://pancakeswap.creator-spring.com/',
+        label: t('Medium'),
+        href: '/',
       },
     ],
   },
