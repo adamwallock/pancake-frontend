@@ -47,7 +47,11 @@ const ControlContainer = styled.div`
     margin-bottom: 0;
   }
 `
-
+const MainContainer = styled.div`
+  background: url(../images/background-logo.svg), #16182d;
+  background-size: cover;
+  background-position: center;
+`
 const ToggleWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -367,14 +371,12 @@ const Farms: React.FC = () => {
   }
 
   return (
-    <>
+    <MainContainer>
       <PageHeader>
-        <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-          {t('Farms')}
+        <Heading as="h1" scale="xxl" color="primary" mb="24px" textAlign="center">
+          {t('Stake LP Tokens to Earn PIXIU')}
         </Heading>
-        <Heading scale="lg" color="text">
-          {t('Stake Liquidity Pool (LP) tokens to earn.')}
-        </Heading>
+
       </PageHeader>
       <Page>
         <ControlContainer>
@@ -382,7 +384,7 @@ const Farms: React.FC = () => {
             <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
             <ToggleWrapper>
               <Toggle checked={stakedOnly} onChange={() => setStakedOnly(!stakedOnly)} scale="sm" />
-              <Text> {t('Staked only')}</Text>
+              <Text color="white"> {t('Staked only')}</Text>
             </ToggleWrapper>
             <FarmTabButtons hasStakeInFinishedFarms={stakedInactiveFarms.length > 0} />
           </ViewControls>
@@ -390,6 +392,7 @@ const Farms: React.FC = () => {
             <LabelWrapper>
               <Text textTransform="uppercase">{t('Sort by')}</Text>
               <Select
+              
                 options={[
                   {
                     label: t('Hot'),
@@ -416,7 +419,7 @@ const Farms: React.FC = () => {
               />
             </LabelWrapper>
             <LabelWrapper style={{ marginLeft: 16 }}>
-              <Text textTransform="uppercase">{t('Search')}</Text>
+              <Text  textTransform="uppercase">{t('Search')}</Text>
               <SearchInput onChange={handleChangeQuery} />
             </LabelWrapper>
           </FilterContainer>
@@ -425,7 +428,7 @@ const Farms: React.FC = () => {
         <div ref={loadMoreRef} />
         <StyledImage src="/images/3dpan.png" alt="Pancake illustration" width={120} height={103} />
       </Page>
-    </>
+    </MainContainer>
   )
 }
 

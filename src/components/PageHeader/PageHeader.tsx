@@ -4,7 +4,7 @@ import { Box } from 'pixiufarm-uikit'
 import Container from '../layout/Container'
 
 const Outer = styled(Box)<{ background?: string }>`
-  background: ${({ theme, background }) => background || theme.colors.gradients.bubblegum};
+  background: transparent;
 `
 
 const Inner = styled(Container)`

@@ -129,16 +129,16 @@ const Select: React.FunctionComponent<SelectProps> = ({ options, onChange }) => 
     <DropDownContainer isOpen={isOpen} ref={containerRef} {...containerSize}>
       {containerSize.width !== 0 && (
         <DropDownHeader onClick={toggling}>
-          <Text>{selectedOption.label}</Text>
+          <Text color="#f31e58">{selectedOption.label}</Text>
         </DropDownHeader>
       )}
-      <ArrowDropDownIcon color="text" onClick={toggling} />
+      <ArrowDropDownIcon  color="#f31e58" onClick={toggling} />
       <DropDownListContainer>
         <DropDownList ref={dropdownRef}>
           {options.map((option) =>
             option.label !== selectedOption.label ? (
               <ListItem onClick={onOptionClicked(option)} key={option.label}>
-                <Text>{option.label}</Text>
+                <Text color="#f31e58">{option.label}</Text>
               </ListItem>
             ) : null,
           )}

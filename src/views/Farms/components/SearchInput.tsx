@@ -6,6 +6,7 @@ import debounce from 'lodash/debounce'
 
 const StyledInput = styled(Input)`
   border-radius: 16px;
+  color:#f31e58;
   margin-left: auto;
 `
 

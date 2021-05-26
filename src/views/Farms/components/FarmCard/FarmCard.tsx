@@ -45,7 +45,7 @@ const StyledCardAccent = styled.div`
 
 const FCard = styled.div<{ isPromotedFarm: boolean }>`
   align-self: baseline;
-  background: ${(props) => props.theme.card.background};
+  background: #0B0D19;
   border-radius: ${({ theme, isPromotedFarm }) => (isPromotedFarm ? '31px' : theme.radii.card)};
   box-shadow: 0px 1px 4px rgba(25, 19, 38, 0.15);
   display: flex;
@@ -54,6 +54,7 @@ const FCard = styled.div<{ isPromotedFarm: boolean }>`
   padding: 24px;
   position: relative;
   text-align: center;
+  color: white;
 `
 
 const Divider = styled.div`
@@ -90,7 +91,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
     : '-'
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : 'CAKE'
+  const earnLabel = farm.dual ? farm.dual.earnLabel : 'PIXIU'
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
 
