@@ -35,6 +35,7 @@ const StyledTable = styled.table`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  
 `
 
 const TableBody = styled.tbody`
@@ -48,6 +49,7 @@ const TableBody = styled.tbody`
 
 const TableContainer = styled.div`
   position: relative;
+
 `
 
 const ScrollButtonContainer = styled.div`

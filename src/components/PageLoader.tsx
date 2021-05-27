@@ -7,6 +7,8 @@ const Wrapper = styled(Page)`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #121827;
+  width: 100%;
 `
 
 const PageLoader: React.FC = () => {

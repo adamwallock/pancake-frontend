@@ -35,7 +35,8 @@ const ControlContainer = styled.div`
   width: 100%;
   align-items: center;
   position: relative;
-
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: space-between;
   flex-direction: column;
   margin-bottom: 32px;

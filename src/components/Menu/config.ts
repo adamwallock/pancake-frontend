@@ -31,7 +31,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Referrals'),
     icon: 'FarmIcon',
-    href: 'http://localhost:5000/#/refferals',
+    href: 'http://localhost:5000/#/referrals',
   },
   {
     label: t('Listings'),

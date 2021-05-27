@@ -10671,10 +10671,10 @@ pirates@^4.0.1:
   dependencies:
     node-modules-regexp "^1.0.0"
 
-pixiufarm-uikit@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/pixiufarm-uikit/-/pixiufarm-uikit-1.0.4.tgz#8ef45d3e899019e011e24f281191f37fc053bdaa"
-  integrity sha512-bdPrHbgXKAy+8tPypakkSJ1/auLZeeaef4LonRfYmXK9RfEBYKk0ZC69AkG0jDzqjKnN0QcquHwJqXU4y89IZQ==
+pixiufarm-uikit@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/pixiufarm-uikit/-/pixiufarm-uikit-1.0.9.tgz#190f1b68669b15fb66c0c1a3ce367e78bfae2fa1"
+  integrity sha512-w5DoFwc6Rgj/u8D273CMEGVXBN9lOiBrpK8ZxCiN0oCzX/pacBtOVtgNm97L7ZnlrYHY24OMVtJQ1japTkwn7g==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
